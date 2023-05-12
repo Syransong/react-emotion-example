@@ -52,6 +52,18 @@ function App() {
       `}>
         This is an example of <code>`css` using a tagged template literal.</code>
       </div>
+      <Quote>
+        This is a quote!
+      </Quote>
+      <Quote size={25}>
+        This is a quote with large text size!
+      </Quote>
+      <Cite>
+        Citation with light text! <br></br>
+      </Cite>
+      <Cite weight={700}>
+        Citation with heavy text!
+      </Cite>
     </div>
   );
 }
