@@ -8,12 +8,23 @@ const Heading = styled('h1') `
   color: ${props => props.fg}
 `;
 
+const Subheading = Heading.withComponent('h2');
+
 function App() {
   return (
     <div>
       <Heading bg="#008f68" fg="#fae042">
         Heading with a green background and yellow text
       </Heading>
+      <Subheading>
+        Subheading with default colors
+      </Subheading>
+      <Subheading fg="#6db65b">
+        Subheading with light green text
+      </Subheading>
+      <Subheading bg="#6db65b">
+        Subheading with light green background.
+      </Subheading>
       <div css={css({
         margin: 10,
         padding: 10, 
