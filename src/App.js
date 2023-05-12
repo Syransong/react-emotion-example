@@ -10,6 +10,19 @@ const Heading = styled('h1') `
 
 const Subheading = Heading.withComponent('h2');
 
+const Quote = styled('blockquote') (props => ({
+  fontSize: props.size,
+}));
+
+const Cite = styled('cite') (
+  {
+    fontWeight: 100,
+  },
+  props => ({
+    fontWeight: props.weight
+  })
+);
+
 function App() {
   return (
     <div>
