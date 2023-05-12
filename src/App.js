@@ -23,9 +23,17 @@ const Cite = styled('cite') (
   })
 );
 
+const Footer = styled('footer')`
+  border-top: 1px solid #ccc;
+  color: #ccc;
+  margin-top: 50px !important;
+  padding-top: 20px
+`;
+
 function App() {
   return (
-    <div>
+    <div css={css`background: #ddd;`}>
+      <div css={css({padding: 10})}>
       <Heading bg="#008f68" fg="#fae042">
         Heading with a green background and yellow text
       </Heading>
@@ -64,6 +72,10 @@ function App() {
       <Cite weight={700}>
         Citation with heavy text!
       </Cite>
+      <Footer>
+        This is the footer!
+      </Footer>
+      </div>
     </div>
   );
 }
